@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./account.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 40px; margin-top: 30px;">
+            <img src="./logoblack.jpg" style="width: 150px; margin-top: -10px; margin-left: 100px;">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: black; margin-left: 50px;font-size: 12px; font-weight: bold;">NBA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: black;font-size: 12px; font-weight: bold;">NFL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: black;font-size: 12px; font-weight: bold;">NHL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: black;font-size: 12px; font-weight: bold;">MLB</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: black; font-size: 12px; font-weight: bold;">SOCCER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: black; font-size: 12px; font-weight: bold;">FANTASY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: black; font-size: 12px; font-weight: bold;">NASCAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: black;">
+                            <i class="fa fa-search" aria-hidden="true" style="margin-right: 0px;"></i>
+                        </a>  
+                    </li>
+                    <button class="btn My_Posts" style="background-color:rgb(103, 192, 103); border-radius: 30px; font-size: 12px; font-weight: bold; color: white; height: 35px; margin-left: 80px; font-size:large;">POSTS</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <div class="container-fluid d-flex" style="height: calc(100vh - 40px);">
+        <div class="account-settings" style="text-align: left ; background-color: #F6F7F9; ">
+            <h6 class="card-title" style="margin-left: 50px; cursor: pointer; margin-top: 40px;font-weight: 600;">Account Settings</h6>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item custom-list-item"style="margin-left: 50px;background-color: #F6F7F9;"><a href="#" class="settings-link">My Profile</a></li>
+                <li class="list-group-item custom-list-item"style="margin-left: 50px;background-color: #F6F7F9;"><a href="#" class="settings-link">Security</a></li>
+                <li class="list-group-item custom-list-item"style="margin-left: 50px;background-color: #F6F7F9;"><a href="#" class="settings-link">Notifications</a></li>
+                <li class="list-group-item custom-list-item"style="margin-left: 50px;background-color: #F6F7F9;"><a href="#" class="settings-link">Plan and Billing</a></li>
+            </ul>
+        </div>
+        <div class="profile-content" style="margin-left: 120px; margin-top: 20px;">
+            <h2 class="card-title" style="cursor: pointer; font-weight: bold;">My profile</h2>
+            <div class="avatar-container mb-4">
+                <img id="avatar" src="file:///C:/sportsBlogPost/updatedBlogPost/updatedBlogPost/storage/app/public/avatars/OoOMO8H3lh8NnTekbDkr1GscwEu7Z3qpX9Gm6WUB.png" alt="Avatar" class="avatar-img">
+                <input type="file" id="avatar-input" class="hidden-input" accept="image/*">
+                <button id="upload-btn" class="btn btn-change-avatar" style="width: 125px;height: 40px;margin-left: 50px;">Change Avatar</button>
+            </div>
+        
+            <form id="profile-form">
+                <div class="form-group">  
+                    <label for="email" >Email address</label>
+                    <input type="email" class="form-control" id="email" style="background-color: #F6F7F9; width: 50%;">
+                </div>
+         
+                <div class="form-group">
+                    <label for="public-author-name">Public Author Name</label>
+                    <input type="text" class="form-control" id="public-author-name" style="background-color: #F6F7F9; width: 50%;">
+                </div>
+                <div class="form-group">
+                    <label for="user-bio">Bio</label>
+                    <input type="text" class="form-control" id="Bio" style="background-color: #F6F7F9; width: 50%;">
+                </div>
+                <button type="submit" class="btn btn-success btn-block" style="width: 50%; border-radius: 20px; margin-left: 0px; height: 40px; margin-top: 20px; background-color: #53AA51; font-weight: bold;">Save Changes</button>
+            </form>
+            
+         
+        </div>
+    </form>
+   
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./account.js"></script>
+</body>
+</html>
+

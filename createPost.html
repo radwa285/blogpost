@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Create Post</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="./createPost.css">
+ </head>
+ <body>
+     <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 40px; margin: 0;">
+         <img class="logoblack" src="./logoblack.jpg" style="width: 150px; margin-top: -10px;">
+         <div class="navbar-buttons">
+             <button class="btn btn-close-save">close and save the draft</button>
+             <button class="btn btn-clear-draft">clear Draft</button>
+             <button class="btn btn-publish">publish...</button>
+             <button class="btn" style="border-radius: 20px; border: 0px lightgray solid; background-color: #F6F7F9;"><i class="fa fa-clock-o" aria-hidden="true" style="color: gray;"></i></button>
+         </div>
+     </nav>
+     <hr>
+     <body>
+        <div id="loading-line"></div>
+       
+    </body>
+    
+     <div class="create-post">
+         <input id="inside" type="text" class="post-title" placeholder="Title..." />
+         <div class="image-upload" id="imageUploadContainer" style="background-color: #F6F7F9;">
+             <label for="file-input">
+                 <span><i class="fa fa-picture-o" aria-hidden="true"></i></span>
+                 <span class="add" style="margin-top: -5px;">Add photo</span>
+             </label>
+             <input id="file-input" type="file" accept="image/*" />
+             <span id="file-name"></span>
+         </div>
+         <div id="image-preview-container">
+            <img id="image-preview" src="" alt="Image Preview" style="display: none; max-width: 100%; height: auto;" />
+        </div>
+ 
+         <div class="toolbar">
+             <button class="in" type="button" onclick="format('bold')"><b>B</b></button>
+             <button class="in" type="button" onclick="format('italic')"><i>I</i></button>
+             <button class="in" type="button" onclick="format('underline')"><u>U</u></button>
+             <button class="in" type="button" onclick="format('insertUnorderedList')"><i class="fa fa-list-ul" aria-hidden="true"></i></button>
+             <button class="in" type="button" onclick="format('insertOrderedList')"><i class="fa fa-list-ol" aria-hidden="true"></i></button>
+         </div>
+ 
+         <div class="text-editor" contenteditable="true" style="border: 2px #ddd dashed;">
+         </div>
+         <div><input class="comment" type="text" placeholder="leave your comment"></div>
+         <img class="imgg" src="./export.png">
+     </div>
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+     <script src="./createPost.js"> </script>
+     
+ </body>
+ </html>
+ 
